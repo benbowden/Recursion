@@ -5,7 +5,11 @@
  */
 
 public class RecursiveMethods {
-	
+	public static void main(String args[])
+	{
+		System.out.println(fib(46));
+		
+	}
 	/*
 	//test main
 	public static void main(String args[])
@@ -46,7 +50,6 @@ public class RecursiveMethods {
 	//returns fibonacci result
 	public static int fib(int n)
 	{
-		
 		if(n== 1)
 		{
 			return 1;
@@ -54,9 +57,9 @@ public class RecursiveMethods {
 		
 		if(n == 2)
 		{
-			return 2;
+			return 1;
 		}
-		return fib(n-1) + fib (n-2);	
+		return fib(n-2) + fib (n-1);	
 	}
 	
 	public static void printArray (int i, int arrayOfNum[])
