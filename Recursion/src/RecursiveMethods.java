@@ -7,7 +7,7 @@
 public class RecursiveMethods {
 	public static void main(String args[])
 	{
-		System.out.println(fib(46));
+		System.out.println("Fib: " + fib(0));	
 		
 	}
 	/*
@@ -27,6 +27,8 @@ public class RecursiveMethods {
 	}
 	*/
 	
+	
+	//sum of values starting at n (3 i.e. 3+2+1)
 	public static int sum(int n)
 	{
 		if(n == 1)
@@ -37,6 +39,7 @@ public class RecursiveMethods {
 		
 	}
 	
+	//product of values (3 i.e. 3*2*1)
 	public static int prod(int n)
 	{
 		if(n== 1)
@@ -50,6 +53,10 @@ public class RecursiveMethods {
 	//returns fibonacci result
 	public static int fib(int n)
 	{
+		if(n < 1){
+			System.out.println("Enter a higher number than " + n + ". Returning 0");
+			return 0;
+		}
 		if(n== 1)
 		{
 			return 1;
