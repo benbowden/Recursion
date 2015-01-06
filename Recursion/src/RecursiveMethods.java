@@ -5,28 +5,13 @@
  */
 
 public class RecursiveMethods {
-	public static void main(String args[])
-	{
-		System.out.println("Fib: " + fib(0));	
-		
-	}
-	/*
-	//test main
-	public static void main(String args[])
-	{
-		//call any of these to 
-		
-		int myArray[] = {4, 2, 3, 4};
-		printArray(0, myArray);
-		System.out.println("Reverse");
-		printArrayReverse(myArray.length-1, myArray);
-		System.out.println("Count Zeros");
-		System.out.println("Amount of zeros: " + countZeros(0, myArray));
-		System.out.println("Min");
-		findMin(0, myArray, myArray[0]);
-	}
-	*/
 	
+	
+	public static void main(String args[])
+	{
+		System.out.println("Fib: " + fib(0));	//test solution, calling fib of 0 in this example
+		
+	}
 	
 	//sum of values starting at n (3 i.e. 3+2+1)
 	public static int sum(int n)
